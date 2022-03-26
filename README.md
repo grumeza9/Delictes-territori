@@ -9,6 +9,8 @@ El que m'ha motivat a triar aquesta temàtica és la meva orientació cap al cam
 
 En aquest cas podrem saber en quina Regió Policial (límit administratiu format per comarques) és generen més delictes, quin és el més freqüent, entre d'altres comparatives.
 
+![Mapa de Regions policials de Catalunya](/images/mapa_regions_policials.jpg)
+
 
 
 

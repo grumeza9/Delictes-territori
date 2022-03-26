@@ -21,10 +21,7 @@ Les dades de delictes han estat descarregades a partir de la web de la [Generali
 
 Posteriorment aquestes dades han estat filtrades per la tipologia de delicte, on únicament es treballen els relacionats amb l'ordenació del territori.
 
-flowchart LR
-A[Total de delictes contra l'ordenació] -->|Subgrups| B|Delictes contra| --> C[Els recursos naturals i el medi ambient]
-B --> D [La flora, fauna i animals domèstics]
-B -->E [El patrimoni històric]
+(/images/map-diagram.jpg)
 
 
 ---

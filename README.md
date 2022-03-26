@@ -12,13 +12,10 @@ En aquest cas podrem saber en quina Regió Policial (límit administratiu format
 ![Mapa de Regions policials de Catalunya](/images/mapa_regions_policials.jpg)
 
 
-
-
-
 ---
 ## Dades i continguts
 
-
+Les dades de delictes han estat descarregades a partir de la web de la Generalitat de Catalunya, Els Mossos d'Esquadra ➡️ Indicadors i qualitat ➡️ Dades obertes ➡️ Catàleg ➡️ Dades delinqüencials
 
 
 

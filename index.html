@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier New">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Monospace", Courier New;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/portada.jpeg");
+  min-height: 80%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MAPS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Font: Luis Fernández-Galiano </span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:40px">Delictes contra<br>l'ordenació del territori</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Segons Regió policial, Catalunya, 2021</span>
+  </div>
+</header>
+
+
+<!-- Tipologia de delictes CONT -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TIPOLOGIA DE DELICTES</span></h5>
+    <p>Els delictes contra l'ordenació territorial poden ser de tres tipus:</p>
+    <p>Per una banda, trobem els referents a la flora, fauna i animals domèstics, els que atempten contra els recursos naturals i el medi ambient, i per últim lloc, els que van contra el patrimoni històric.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Aquí trobem un mapa referent al total de delictes contra l'ordenació del territori.</i></p>
+      <p>Font: Elaboració pròpia a partir de dades de la Generalitat de Catalunya</p>
+    </div>
+    <iframe src="./maps/index.html" title="Mapa 1" width="100%" height="300" frameboarder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:none;">
+    </iframe>
+  
+  </div>
+</div>
+
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

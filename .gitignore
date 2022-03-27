@@ -3,7 +3,6 @@
 *.gpkg-wal
 
 # GIS files
-*.shp
 *.dbf
 *.prj
 *.cpg
@@ -11,8 +10,10 @@
 *.asc
 *.rst
 
-# Token
-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
+# Other
+*.qgz
+*.txt
+*.qml
 
 
 # Built application files

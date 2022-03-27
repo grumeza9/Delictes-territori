@@ -1,3 +1,20 @@
+# Geopackage temp files
+*.gpkg-shm
+*.gpkg-wal
+
+# GIS files
+*.shp
+*.dbf
+*.prj
+*.cpg
+*.shx
+*.asc
+*.rst
+
+# Token
+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
+
+
 # Built application files
 *.apk
 *.aar

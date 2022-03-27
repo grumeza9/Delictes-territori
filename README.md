@@ -32,6 +32,7 @@ L'estrucutura de la web serà molt simple, i ve donada principalment pel tipus d
 ## Cartografia amb el pluguin QGIS2WEB
 El pluguin QGIS2WEB ha estat deenvolupat per [Tom Chadwin](https://github.com/tomchadwin), qui també és usuari de Github on soluciona dubtes als usuaris del pluguin.
 
+Un aspecte a considerar és que el mapa de fons no carrega amb el navegador de Google Chrome, però sí amb Safari. Parlaré en un futur del tema si és que ho puc solucionar.
 
 
 ---

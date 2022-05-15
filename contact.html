@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/style_googleapis.css">
+<script src="https://kit.fontawesome.com/739f2d7d78.js" crossorigin="anonymous"></script>
 <style>
 
 body, html {
@@ -16,7 +17,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("images/contact-image.webp");
+  background-image: url("images/contact.jpeg");
   min-height: 30%;
 }
 
@@ -29,19 +30,26 @@ body, html {
 <body>
 
 <!-- Links (sit on top) -->
+
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+  <div class="w3-center w3-row w3-padding-small w3-black">
+
     <div class="w3-col s3">
-      <a href="index.html"class="w3-button w3-block w3-black">INICI</a>
+      <a href="index.html">
+       <img src="images/logo.png" height="38.5px"></a>
+    </div>
+
+    <div class="w3-col s3">
+      <a href="index.html"class=" w3-center w3-button w3-black">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="content.html" class="w3-button w3-block w3-black">ASPECTES LEGALS</a>
+      <a href="content.html" class="w3-center w3-button w3-black">LEGAL</a>
     </div>
     <div class="w3-col s3">
-      <a href="mapas.html" class="w3-button w3-block w3-black">CARTOGRAFIA</a>
+      <a href="mapas.html" class="w3-center w3-button w3-black">MAPS</a>
     </div>
     <div class="w3-col s3">
-      <a href="contact.html" class="w3-button w3-block w3-grey">CONTACT</a>
+      <a href="contact.html" class="w3-center w3-button w3-grey">ABOUT</a>
     </div>
   </div>
 </div>
@@ -51,19 +59,54 @@ body, html {
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CONTACTE</span></h5>
   </header>
 
+<!-- Form 4 contact -->
 
-
-
-
-
-
+<form action="/action_page.php">
+  <div class="w3-panel w3-center w3-light-grey w3-form">
+    <p>Soc?</p>
+    <form action="/action_page.php">
+    <input type="radio" id="Empresa" name="soc?" value="Empresa">
+    <label for="empresa">Empresa</label>
+    <br>
+    <input type="radio" id="Particular" name="soc?" value="Particular">
+    <label for="Particular">Particular</label>
+    <br> <br>
+    <label for="fname">Nom:</label><br>
+    <input type="text" id="fname" name="fname" value="Pep"><br>
+    <label for="lname">Cognom:</label><br>
+    <input type="text" id="lname" name="lname" value="Búsquets"><br>
+    <label for="lname">E-mail:</label><br>
+    <input type="email" id="mail" name="mail" value="@"> <br>
+    <label for="lname">Telèfon:</label><br>
+    <input type="tel"><br><br>
+    <br>
+    <br>
+    <input type="button" onclick="alert('Gràcies per contactar!')" value="Enviar">
+    <input type="reset" value="Esborrar tot">
+    <br>
+    <br>
+    </div>
+</form>
 
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-light-grey w3-padding-small w3-large">
+
+ <p>GPL-3.0 license</p>
+
+  <div class="redes-container">   
+        <ul>
+         <li><a href="#" class="up-to-line"><i class="fa-solid fa-arrow-up"></i></i></a></li>
+         <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+         <li><a href="https://www.twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="https://www.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+         <li><a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+        <ul>  
+    </div>
+
 </footer>
 
 <script>

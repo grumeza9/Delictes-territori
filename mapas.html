@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delictes territorials</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/style_googleapis.css">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Monospace", Courier New;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/carto-image.jpeg");
+  min-height: 30%;
+}
+
+.menu {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html"class="w3-button w3-block w3-black">INICI</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="content.html" class="w3-button w3-block w3-black">ASPECTES LEGALS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="mapas.html" class="w3-button w3-block w3-grey">CARTOGRAFIA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Top menu -->
+  <header class="bgimg w3-display-container w3-grayscale-min">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CARTOGRAFIA</span></h5>
+  </header>
+
+<!-- Tipologia de delictes & MAPS -->
+<div class="w3-container" id="content">
+  <div class="w3-content" style="max-width:900px">
+    <p>En aquest apartat disposarem la cartografia per tipologia de delicte contra l'ordenció del territori.<br>
+   <br>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Mapa referent al nombre de delictes<b> contra els recursos naturals i el medi ambient.</b></p>
+      <p>Font: Elaboració pròpia a partir de dades de la Generalitat de Catalunya</p>
+    </div>
+    <iframe src="maps/natura/index.html" title="Mapa 2" width="100%" height="500" frameboarder="0" scrolling="yes" marginheight="0" marginwidth="0" style="border:none;">
+    </iframe>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Mapa referent al nombre de delictes<b> contra la flora, fauna i animals domèstics.</b></p>
+      <p>Font: Elaboració pròpia a partir de dades de la Generalitat de Catalunya</p>
+    </div>
+    <iframe src="maps/flora i fauna/index.html" title="Mapa 3" width="100%" height="500" frameboarder="0" scrolling="yes" marginheight="0" marginwidth="0" style="border:none;">
+    </iframe>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Mapa referent al nombre de delictes<b> contra el patrimoni històric.</b></p>
+      <p>Font: Elaboració pròpia a partir de dades de la Generalitat de Catalunya</p>
+    </div>
+    <iframe src="maps/historic/index.html" title="Mapa 4" width="100%" height="500" frameboarder="0" scrolling="yes" marginheight="0" marginwidth="0" style="border:none;">
+    </iframe>
+
+<div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Mapa referent al nombre del <b> total de delictes contra l'ordenació territorial.</b></p>
+      <p>Font: Elaboració pròpia a partir de dades de la Generalitat de Catalunya</p>
+    </div>
+    <iframe src="maps/total/index.html" title="Mapa 1" width="100%" height="500" frameboarder="0" scrolling="yes" marginheight="0" marginwidth="0" style="border:none;">
+    </iframe>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

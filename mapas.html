@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/style_googleapis.css">
 <script src="https://kit.fontawesome.com/739f2d7d78.js" crossorigin="anonymous"></script>
+<script src="js/js.js"></script>
 <style>
 
 body, html {
@@ -117,24 +118,5 @@ body, html {
     </div>
 
 </footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
-
 </body>
 </html>
